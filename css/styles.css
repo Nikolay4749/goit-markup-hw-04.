@@ -272,6 +272,21 @@ button {
   background-position: center;
 }
 
+.antena::before {
+  background-image: url(../images/antenna.svg);
+}
+
+.clock::before {
+  background-image: url(../images/clock.svg);
+}
+
+.diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.astronaut::before {
+  background-image: url(../images/astronaut.svg);
+}
 /* ======= feauture style end here ======= */
 
 /* ==== What are we doing style start here ==== */
@@ -381,6 +396,15 @@ button {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.icon-team {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  text-align: center;
+  background-color: violet;
 }
 
 /* ===== Our team style end here ===== */
