@@ -357,7 +357,7 @@ button {
 
 .card {
   width: 270px;
-  height: 368px;
+  min-height: 368px;
   left: 215px;
   top: 1635px;
 
@@ -398,21 +398,94 @@ button {
   letter-spacing: 0.03em;
 }
 
+.team-social-list {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.team-social-link:not(:last-child) {
+  margin-right: 10px;
+}
+
 .icon-team {
   display: flex;
   width: 44px;
   height: 44px;
   justify-content: center;
-  text-align: center;
-  background-color: violet;
+  align-items: center;
+  border-radius: 50%;
+}
+.link-svg {
+  fill: #afb1b8;
+}
+
+.icon-team:hover {
+  background-color: var(--accent-color);
+}
+
+.icon-team:hover .link-svg,
+.icon-team:focus .link-svg {
+  fill: var(--primary-white-color);
 }
 
 /* ===== Our team style end here ===== */
+
+/* regular customers (start) */
+.title-customers {
+  display: flex;
+  margin-bottom: 50px;
+
+  font-style: inherit;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+.customers-list {
+  display: flex;
+  text-align: center;
+}
+
+.customers-item {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.customers-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.customer-link {
+  display: flex;
+  padding: 16px 32px;
+}
+
+.customer-svg {
+  fill: #afb1b8;
+}
+
+.customer-link:hover .customer-svg,
+.customer-link:focus .customer-svg {
+  fill: var(--accent-color);
+}
+
+/* regular customers (end) */
 
 /* ===== Footer style start here ===== */
 
 .footer-box {
   display: flex;
+  padding-bottom: 60px;
+  padding-top: 60px;
+
   flex-direction: column;
   background: #2f303a;
 }
@@ -421,16 +494,16 @@ button {
   padding: 0;
 }
 
-.footer-box {
-  padding-bottom: 60px;
-  padding-top: 60px;
+.address-box {
+  display: flex;
+  align-items: baseline;
 }
 
-.footer-list {
+/* .footer-list {
   display: flex;
   flex-direction: column;
   padding-top: 20px;
-}
+} */
 
 .footer-item:not(:last-child) {
   margin-bottom: 9px;
@@ -476,6 +549,25 @@ button {
 .location:hover,
 .location:focus {
   color: var(--accent-color);
+}
+
+.footer-link-box {
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  width: 206px;
+  height: 80px;
+  border: 1px solid tomato;
+}
+
+.footer-title {
+  color: var(--primary-white-color);
+  font-style: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 /* ===== Footer style end here ===== */
