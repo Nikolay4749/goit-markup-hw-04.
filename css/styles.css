@@ -4,6 +4,7 @@
   --text-title: #212121;
   --primary-white-color: #ffffff;
   --primary-bcg-color: #f5f4fa;
+  --primary-fill-svg: #afb1b8;
 
   --primary-font: 'Roboto';
   --secondary-font: 'Raleway';
@@ -44,7 +45,6 @@ a {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 1px solid tomato; */
 }
 
 .section {
@@ -53,7 +53,6 @@ a {
 
   margin-left: auto;
   margin-right: auto;
-  /* outline: 1px solid green; */
 }
 
 /* ======= Heaeder style start here ======= */
@@ -232,7 +231,6 @@ button {
 
 .feature-item:not(:last-child) {
   margin-right: 30px;
-  max-width: 270px;
 }
 
 .feature-title {
@@ -247,6 +245,24 @@ button {
   text-transform: uppercase;
 }
 
+.feature-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+
+  background-color: var(--primary-bcg-color);
+  max-width: 270px;
+  max-height: 120px;
+  border-radius: 4px;
+}
+
+.feature-svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .feature-content {
   color: var(--text-primary);
 
@@ -254,19 +270,6 @@ button {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-}
-
-.feature-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 25px 100px;
-  margin-bottom: 30px;
-
-  background-color: #f5f4fa;
-  width: 270px;
-  height: 120px;
-  border-radius: 4px;
 }
 
 /* ======= feauture style end here ======= */
@@ -399,7 +402,7 @@ button {
   border-radius: 50%;
 }
 .link-svg {
-  fill: #afb1b8;
+  fill: var(--primary-fill-svg);
 }
 
 .icon-team:hover {
@@ -421,7 +424,8 @@ button {
   margin-bottom: 50px;
 
   color: var(--text-title);
-  font-style: inherit;
+
+  font-style: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
@@ -430,28 +434,31 @@ button {
 
 .customers-list {
   display: flex;
-  text-align: center;
+  justify-content: space-between;
 }
 
 .customers-item {
-  width: 170px;
-  height: 92px;
+  display: flex;
+  min-width: 170px;
+  min-height: 92px;
   border: 1px solid #afb1b8;
+  align-items: center;
+  justify-content: center;
   box-sizing: border-box;
   border-radius: 4px;
+}
+
+.customer-link {
+  align-items: center;
+  justify-content: center;
 }
 
 .customers-item:not(:last-child) {
   margin-right: 30px;
 }
 
-.customer-link {
-  display: flex;
-  padding: 16px 32px;
-}
-
 .customer-svg {
-  fill: #afb1b8;
+  fill: var(--primary-fill-svg);
 }
 
 .customer-link:hover .customer-svg,
@@ -462,24 +469,22 @@ button {
 /* regular customers (end) */
 
 /* ===== Footer style start here ===== */
+.address {
+  display: flex;
+  padding: 0;
+}
+
 .footer-box {
   display: flex;
   padding-bottom: 60px;
   padding-top: 60px;
-  flex-direction: column;
+
   background: #2f303a;
 }
 
-.address {
-  padding: 0;
-}
-
-.footer-container {
+.address-box {
   display: flex;
-
-  width: 206px;
-  height: 80px;
-  border: 1px solid tomato;
+  align-items: baseline;
 }
 
 .footer-list {
@@ -534,6 +539,52 @@ button {
   color: var(--accent-color);
 }
 
+.footer-link-box {
+  margin-left: 70px;
+  width: 206px;
+  height: 80px;
+}
+
+.footer-title-link {
+  color: var(--primary-white-color);
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.footer-social-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.footer-link-svg {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.footer-link-svg:hover,
+.footer-link-svg:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-icon-svg {
+  fill: var(--primary-white-color);
+}
+
 /* ===== Footer style end here ===== */
 
 /* =*=*=*= Portfolio =*=*=*= */
@@ -584,7 +635,7 @@ button {
   border-radius: 4px;
   text-align: center;
 
-  background: #f5f4fa;
+  background: var(--primary-bcg-color);
 
   border: none;
   font-family: inherit;
