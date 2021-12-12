@@ -3,6 +3,7 @@
   --text-primary: #757575;
   --text-title: #212121;
   --primary-white-color: #ffffff;
+  --primary-bcg-color: #f5f4fa;
 
   --primary-font: 'Roboto';
   --secondary-font: 'Raleway';
@@ -152,8 +153,8 @@ header {
   color: var(--text-primary);
 }
 
-.header-link:hover .header-link-svg,
-.header-link:focus .header-link-svg {
+.header-link:hover .icon-contakts,
+.header-link:focus .icon-contakts {
   fill: var(--accent-color);
 }
 
@@ -255,38 +256,19 @@ button {
   letter-spacing: 0.03em;
 }
 
-.feature-list::before {
-  content: '';
+.feature-icon {
   display: flex;
-}
+  justify-content: center;
+  align-items: center;
+  padding: 25px 100px;
+  margin-bottom: 30px;
 
-.feature-title::before {
-  content: '';
-  display: block;
+  background-color: #f5f4fa;
   width: 270px;
   height: 120px;
-  margin-bottom: 30px;
-  background-color: #f5f4fa;
   border-radius: 4px;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
-.antena::before {
-  background-image: url(../images/antenna.svg);
-}
-
-.clock::before {
-  background-image: url(../images/clock.svg);
-}
-
-.diagram::before {
-  background-image: url(../images/diagram.svg);
-}
-
-.astronaut::before {
-  background-image: url(../images/astronaut.svg);
-}
 /* ======= feauture style end here ======= */
 
 /* ==== What are we doing style start here ==== */
@@ -361,7 +343,7 @@ button {
   left: 215px;
   top: 1635px;
 
-  background: #ffffff;
+  background: var(--primary-white-color);
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -377,7 +359,7 @@ button {
 }
 
 .our-team-section {
-  background-color: #f5f4fa;
+  background-color: var(--primary-bcg-color);
 }
 
 .member-team {
@@ -434,18 +416,18 @@ button {
 /* regular customers (start) */
 .title-customers {
   display: flex;
+  justify-content: center;
+  text-align: center;
   margin-bottom: 50px;
 
+  color: var(--text-title);
   font-style: inherit;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
-  justify-content: center;
-  text-align: center;
   letter-spacing: 0.03em;
-
-  color: #212121;
 }
+
 .customers-list {
   display: flex;
   text-align: center;
@@ -480,12 +462,10 @@ button {
 /* regular customers (end) */
 
 /* ===== Footer style start here ===== */
-
 .footer-box {
   display: flex;
   padding-bottom: 60px;
   padding-top: 60px;
-
   flex-direction: column;
   background: #2f303a;
 }
@@ -494,23 +474,26 @@ button {
   padding: 0;
 }
 
-.address-box {
+.footer-container {
   display: flex;
-  align-items: baseline;
+
+  width: 206px;
+  height: 80px;
+  border: 1px solid tomato;
 }
 
-/* .footer-list {
+.footer-list {
   display: flex;
   flex-direction: column;
   padding-top: 20px;
-} */
+}
 
 .footer-item:not(:last-child) {
-  margin-bottom: 9px;
+  padding-bottom: 9px;
 }
 
 .location {
-  color: #ffffff;
+  color: var(--primary-white-color);
 
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -549,25 +532,6 @@ button {
 .location:hover,
 .location:focus {
   color: var(--accent-color);
-}
-
-.footer-link-box {
-  display: flex;
-  /* justify-content: center;
-  align-items: center; */
-  width: 206px;
-  height: 80px;
-  border: 1px solid tomato;
-}
-
-.footer-title {
-  color: var(--primary-white-color);
-  font-style: inherit;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
 }
 
 /* ===== Footer style end here ===== */
