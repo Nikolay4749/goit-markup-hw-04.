@@ -148,7 +148,7 @@ header {
   margin-right: 10px;
 }
 
-.header-link-svg {
+.header-link-ico {
   color: var(--text-primary);
 }
 
@@ -252,12 +252,12 @@ button {
   margin-bottom: 30px;
 
   background-color: var(--primary-bcg-color);
-  max-width: 270px;
-  max-height: 120px;
+  min-width: 270px;
+  min-height: 120px;
   border-radius: 4px;
 }
 
-.feature-svg {
+.feature-ico {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -401,16 +401,17 @@ button {
   align-items: center;
   border-radius: 50%;
 }
-.link-svg {
+.link-ico {
   fill: var(--primary-fill-svg);
 }
 
-.icon-team:hover {
+.icon-team:hover,
+.icon-team:focus {
   background-color: var(--accent-color);
 }
 
-.icon-team:hover .link-svg,
-.icon-team:focus .link-svg {
+.icon-team:hover .link-ico,
+.icon-team:focus .link-ico {
   fill: var(--primary-white-color);
 }
 
@@ -441,29 +442,36 @@ button {
   display: flex;
   min-width: 170px;
   min-height: 92px;
-  border: 1px solid #afb1b8;
+
   align-items: center;
   justify-content: center;
-  box-sizing: border-box;
-  border-radius: 4px;
 }
 
 .customer-link {
+  display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid #afb1b8;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
 }
 
 .customers-item:not(:last-child) {
   margin-right: 30px;
 }
 
-.customer-svg {
+.customer-ico {
   fill: var(--primary-fill-svg);
 }
 
-.customer-link:hover .customer-svg,
-.customer-link:focus .customer-svg {
+.customer-link:hover .customer-ico,
+.customer-link:focus .customer-ico {
   fill: var(--accent-color);
+}
+
+.customer-link:hover {
+  border-color: var(--accent-color);
 }
 
 /* regular customers (end) */
@@ -567,7 +575,7 @@ button {
   border-radius: 50%;
 }
 
-.footer-link-svg {
+.footer-link-ico {
   display: flex;
   width: 44px;
   height: 44px;
@@ -576,12 +584,12 @@ button {
   border-radius: 50%;
 }
 
-.footer-link-svg:hover,
-.footer-link-svg:focus {
+.footer-link-ico:hover,
+.footer-link-ico:focus {
   background-color: var(--accent-color);
 }
 
-.footer-icon-svg {
+.footer-icon-logo {
   fill: var(--primary-white-color);
 }
 
