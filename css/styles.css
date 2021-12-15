@@ -111,20 +111,27 @@ header {
 .nav-link.current {
   color: var(--accent-color);
 }
+.link-ico-phone,
+.link-ico-mail {
+  color: var(--text-primary);
+}
 
 .contakts-box {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  text-align: center;
+
   margin-left: auto;
 }
 
 .contakts-item:not(:last-child) {
   margin-right: 50px;
-  display: flex;
 }
 
 .header-link {
-  display: block;
+  display: flex;
+  align-items: center;
+
   padding-top: 32px;
   padding-bottom: 32px;
   margin-left: auto;
@@ -139,21 +146,18 @@ header {
   letter-spacing: 0.02em;
 }
 
+.icon-contakts {
+  margin-right: 10px;
+  fill: var(--text-primary);
+}
+
 .header-link:hover,
-.contakts-link:focus {
+.header-link:focus {
   color: var(--accent-color);
 }
 
-.icon-contakts {
-  margin-right: 10px;
-}
-
-.header-link-ico {
-  color: var(--text-primary);
-}
-
-.header-link:hover .icon-contakts,
-.header-link:focus .icon-contakts {
+.contakts-item:hover .icon-contakts,
+.contakts-item:focus .icon-contakts {
   fill: var(--accent-color);
 }
 
